@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    width: 700px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: 150px 400px;
+
+    grid-template-areas:
+        "header header"
+        "nav main";
+}
+
+header {
+    grid-area: header;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+nav {
+    grid-area: nav;
+    border: 2px solid black;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main {
+    grid-area: main;
+    border: 2px solid black;
+    padding: 20px;
+}

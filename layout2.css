@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    width: 700px;
+    margin: auto;
+
+    display: grid;
+    grid-template-rows: 200px 350px;
+}
+
+header {
+    border: 2px solid black;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main {
+    border: 2px solid black;
+    padding: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.left,
+.right {
+    border: 2px solid black;
+    padding: 20px;
+}
